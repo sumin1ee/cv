@@ -60,7 +60,7 @@ content:
         # link_text: Project Website
         additional_links:
           - title:  Capstone Design Project
-            icon: images/notion_icon.png
+            icon: fas fa-link
             url: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
