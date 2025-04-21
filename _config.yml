@@ -110,17 +110,11 @@ content:
 
         #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: TBD
+  - title: Publications
     layout: text
     content: | # this will include new lines to allow paragraphs
-      TBD
-      - TBD
-      - TBD
-      - TBD
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      # Look at this cool image  
-      # [Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      TBD.
+      I'm currently firing up my research to publish my first paper ASAP. Stay tuned for updates!
 
 # Footer
 footer_show_references: false
