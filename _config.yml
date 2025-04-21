@@ -60,13 +60,13 @@ content:
         # link_text: Project Website
         additional_links:
           - title:  Capstone Design Project
-            icon: fab fa-github
+            icon: images/notion_icon.png
             url: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This project was selected as a top-3 project out of 30 teams — and I was the only solo team to receive an award.
+        # quote: >
+        #   This project was selected as a top-3 project out of 30 teams — and I was the only solo team to receive an award.
         description: | # this will include new lines to allow paragraphs
           Through this project, I built a full-stack pipeline from <mark>Perception</mark> to <mark>Control</mark> for the <mark>Autonomous Valet Parking System</mark>. This project served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
 
@@ -112,7 +112,6 @@ content:
   - title: Publications
     layout: text
     content: | # this will include new lines to allow paragraphs
-      TBD.
       I'm currently firing up my research to publish my first paper ASAP. Stay tuned for updates!
 
 # Footer
