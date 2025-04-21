@@ -48,9 +48,9 @@ instagram_username: whereisumin
 # about_title: About Me
 about_profile_image: images/profile2.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hello World, It's Sumin👋. I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and Neural View Synthesis
+  Hello World, It's Sumin👋 I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and Neural View Synthesis
 
-  I am most skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark>, <mark>Linux-Kernel</mark> and etc
+  I am skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark>, <mark>Linux-Kernel</mark> and <mark>V4L2</mark>
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -61,7 +61,7 @@ content:
         # link_text: Project Website
         additional_links:
           - title:  Capstone Design Project
-            icon: images/notion_icon.png
+            icon: fab fa-github
             url: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
