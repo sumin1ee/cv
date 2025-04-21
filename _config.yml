@@ -49,6 +49,7 @@ instagram_username: whereisumin
 about_profile_image: images/profile2.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hello World, It's Sumin👋 I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and Neural View Synthesis
+  
   I am skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark>, <mark>Linux-Kernel</mark> and <mark>V4L2</mark>
 content:
   - title: Projects # Title for the section
@@ -79,8 +80,8 @@ content:
         # link_text: boringcompany.com
         sub_title: Undergraduate Researcher
         caption: September 2023 - February 2025
-        quote: >
-          What started as a curiosity in path planning evolved into a deep passion for vision-centric AI and end-to-end learning systems
+        # quote: >
+        #   What started as a curiosity in path planning evolved into a deep passion for vision-centric AI and end-to-end learning systems
         description: | # this will include new lines to allow paragraphs
             I initially joined the lab with a strong interest in path planning, where I explored the fundamentals of autonomous trajectory generation. Over time, my exposure to the full pipeline of autonomous systems—including sensor integration, camera-LiDAR setups, and vision-based perception—sparked a growing curiosity in computer vision. This interdisciplinary perspective led me to dive deeper into multi-modal fusion and eventually shaped my passion for vision-centric planning. Recently, I’ve become especially drawn to end-to-end planning systems, where perception and decision-making are learned jointly, and I'm actively pursuing research in that direction.
   - title: Education # Title for the section
@@ -112,7 +113,7 @@ content:
   - title: Publications
     layout: text
     content: | # this will include new lines to allow paragraphs
-      I'm currently firing up my research to publish my first paper ASAP. Stay tuned for updates!
+      I'm currently diving deep into research to publish my first paper as soon as possible. Stay tuned!
 
 # Footer
 footer_show_references: false
