@@ -89,10 +89,10 @@ content:
     content:
       - layout: top-middle
         title: Hanyang University
-        caption: 2022 - 2024
-        sub_title: BS, Dept. of Naval Architecture & Ocean Engineering 
-        description: |
-          GPA : 4.03/4.5
+        caption: 2022 - 2024 (GPA : 4.03/4.5)
+        sub_title: BS, Dept. of Automotive Engineering
+        # description: |
+        #   GPA : 4.03/4.5
 
       - layout: top-middle
         title: Inha University
