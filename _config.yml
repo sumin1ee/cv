@@ -1,0 +1,145 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Sumin Lee
+title: Computer Vision & Autonomous Driving Researcher
+email: maroona@hanyang.ac.kr
+website: sumin1ee.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+# twitter_username: facespics
+github_username:  sumin1ee
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+instagram_username: whereisumin
+# linkedin_username: jameswgrant
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+# additional_links:
+# - title: itsgoingto.be
+#   icon: fas fa-globe
+#   url: https://www.itsgoingto.be
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile2.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hello World, It's Sumin👋. I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and Neural View Synthesis
+
+  I am most skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark>, <mark>Linux-Kernel</mark> and etc
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Capstone Design Project
+        # link: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
+        # link_text: Project Website
+        additional_links:
+          - title:  Capstone Design Project
+            icon: images/notion_icon.png
+            url: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          This project was selected as a top-3 project out of 30 teams — and I was the only solo team to receive an award.
+        description: | # this will include new lines to allow paragraphs
+          Through this project, I built a full-stack pipeline from <mark>Perception</mark> to <mark>Control</mark> for the <mark>Autonomous Valet Parking System</mark>. This project served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Intelligent Robotics and Computer Vision Lab
+        link: ircvlab.github.io
+        # link_text: boringcompany.com
+        sub_title: Undergraduate Researcher
+        caption: September 2023 - February 2025
+        quote: >
+          What started as a curiosity in path planning evolved into a deep passion for vision-centric AI and end-to-end learning systems
+        description: | # this will include new lines to allow paragraphs
+            I initially joined the lab with a strong interest in path planning, where I explored the fundamentals of autonomous trajectory generation. Over time, my exposure to the full pipeline of autonomous systems—including sensor integration, camera-LiDAR setups, and vision-based perception—sparked a growing curiosity in computer vision. This interdisciplinary perspective led me to dive deeper into multi-modal fusion and eventually shaped my passion for vision-centric planning. Recently, I’ve become especially drawn to end-to-end planning systems, where perception and decision-making are learned jointly, and I'm actively pursuing research in that direction.
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Hanyang University
+        caption: 2022 - 2024
+        sub_title: BS, Dept. of Naval Architecture & Ocean Engineering 
+        # quote: >
+          # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        description: | # this will include new lines to allow paragraphs
+          GPA : 4.03/4.5
+    content:
+      - layout: top-middle
+        title: Inha University
+        caption: 2020 - 2022
+        sub_title: Sophomore, Dept. of Mechanical Engineering
+        # quote: >
+          # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+    content:
+      - layout: top-middle
+        title: Inha University
+        caption: 2019 - 2020
+        sub_title: Freshman, Dept. of Naval Architecture & Ocean Engineering 
+        # quote: >
+          # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+        # description: | # this will include new lines to allow paragraphs
+        #   During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+
+        #   I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+
+  - title: TBD
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      TBD
+      - TBD
+      - TBD
+      - TBD
+      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+
+      # Look at this cool image  
+      # [Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
