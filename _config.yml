@@ -71,15 +71,19 @@ content:
         description: | # this will include new lines to allow paragraphs
           <table>
             <tr>
-              <td style="width:50%">
+              <td style="width:35%">
                 <img src="videos/demo_pj.gif" alt="Demo" width="100%"/>
               </td>
-              <td style="vertical-align:top; padding-left:20px;">
+              <td style="vertical-align:top; padding-left:40px;">
                 <p>
-                  Through this project, I built a full-stack pipeline from <mark>Perception</mark> to <mark>Control</mark> for the <mark>Autonomous Valet Parking System</mark>.
+                  Through this project, I built a full-stack pipeline from <b>Perception</b> to <b>Control</b> for the <b>Autonomous Valet Parking System</b>.
                 </p>
                 <p>
                   This project served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
+                </p>
+                
+                <p>
+                  Keywords : <mark>Autonomous Driving</mark>, <mark>Autonomous Valet Parking</mark>, <mark>Camera Calibration</mark>, <mark>BEV</mark>, <mark>Adaptive Pure-pursuit</mark>
                 </p>
               </td>
             </tr>
