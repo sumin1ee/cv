@@ -69,6 +69,7 @@ content:
         quote: >
           Selected as a top-3 project out of 30 teams — the only solo entry to win an award
         description: | # this will include new lines to allow paragraphs
+          <img src="videos/demo_pj.gif" alt="Demo" width="600"/>
           Through this project, I built a full-stack pipeline from <mark>Perception</mark> to <mark>Control</mark> for the <mark>Autonomous Valet Parking System</mark>. This project served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
 
   - title: Experience # Title for the section
