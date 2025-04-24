@@ -74,7 +74,7 @@ content:
               <td style="width:35%">
                 <img src="videos/demo_pj.gif" alt="Demo" width="100%"/>
               </td>
-              <td style="vertical-align:top; padding-left:40px;">
+              <td style="vertical-align:top; padding-left:20px;">
                 <p>
                   Through this project, I built a full-stack pipeline from <b>Perception</b> to <b>Control</b> for the <b>Autonomous Valet Parking System</b>.
                 </p>
