@@ -114,10 +114,10 @@ content:
         caption: "2022.03 - 2025.02 (GPA : 4.03/4.5)"
         sub_title: 🚘 BS, Dept. of Automotive Engineering
 
-      # - layout: top-middle
-      #   title: Inha University
-      #   caption: 2020.03 - 2022.02
-      #   sub_title: 🧰 Sophomore, Dept. of Mechanical Engineering
+      - layout: top-middle
+        title: Inha University
+        caption: 2019.03 - 2022.02
+        sub_title: 🛳️ Dept. of Naval Architecture & Ocean Engineering(Freshman) and Mechanical Engineering(Sophomore)
 
       # - layout: top-middle
       #   title: Inha University
