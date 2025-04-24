@@ -83,7 +83,7 @@ content:
                 </p>
                 
                 <p>
-                  Keywords : <mark>Autonomous Valet Parking</mark>, <mark>Semantic Segmentation</mark>, <mark>Camera Calibration</mark>, <mark>BEV</mark>, <mark>Adaptive Pure-pursuit</mark>
+                  Keywords : <mark>Autonomous Valet Parking</mark>  <mark>Semantic Segmentation</mark>  <mark>RGB-Depth Camera Calibration</mark>  <mark>BEV</mark>  <mark>Adaptive Pure-pursuit</mark>
                 </p>
               </td>
             </tr>
