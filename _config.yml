@@ -106,20 +106,23 @@ content:
     content:
       - layout: top-middle
         title: Hanyang University
-        caption: "2022 - 2024 (GPA : 4.03/4.5)"
-        sub_title: BS, Dept. of Automotive Engineering
-        # description: |
-        #   GPA : 4.03/4.5
+        caption: 2025.02 - Present
+        sub_title: 🚘 MS, Dept. of Automotive Engineering
+
+      - layout: top-middle
+        title: Hanyang University
+        caption: "2022.03 - 2025.02 (GPA : 4.03/4.5)"
+        sub_title: 🚘 BS, Dept. of Automotive Engineering
 
       - layout: top-middle
         title: Inha University
-        caption: 2020 - 2022
-        sub_title: Sophomore, Dept. of Mechanical Engineering
+        caption: 2020.03 - 2022.02
+        sub_title: 🧰 Sophomore, Dept. of Mechanical Engineering
 
       - layout: top-middle
         title: Inha University
-        caption: 2019 - 2020
-        sub_title: Freshman, Dept. of Naval Architecture & Ocean Engineering 
+        caption: 2019.03 - 2020.02
+        sub_title: 🛳️ Freshman, Dept. of Naval Architecture & Ocean Engineering 
         # quote: >
           # Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
         # description: | # this will include new lines to allow paragraphs
