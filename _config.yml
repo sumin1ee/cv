@@ -76,7 +76,7 @@ content:
               </td>
               <td style="vertical-align:top; padding-left:20px;">
                 <p>
-                  Through this project, I built a full-stack pipeline from <b>Perception</b> to <b>Control</b> for the <b>Autonomous Valet Parking System</b>.
+                  Through this project, I built a full-stack pipeline which consists of <b>Perception</b>, <b>Planning</b> and <b>Control</b> for the <b>Autonomous Valet Parking System</b>.
                 </p>
                 <p>
                   It served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
