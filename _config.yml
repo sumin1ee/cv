@@ -76,7 +76,7 @@ content:
               </td>
               <td style="vertical-align:top; padding-left:20px;">
                 <p>
-                  Our team developed <b>Swin-Trajectory</b>, a minimalist transformer-based waypoint planner that uses a single front-facing camera and structured ego-vehicle history. By leveraging a lightweight Swin Transformer backbone and cross-attention between image features and dynamic waypoint queries.
+                  Our team developed <b>Swin-Trajectory</b>, a minimalist transformer-based waypoint planner that uses a single front-facing camera and structured ego-vehicle history. By leveraging a lightweight Swin Transformer backbone and cross-attention between image features and dynamic waypoint queries, Swin-Trajectory efficiently predicts future waypoints.
                 </p>
                 <p>
                   I extend my deepest gratitude to our team members for their passion, creativity, and tireless effort that made this achievement possible; and to my supervisor for unwavering support and mentorship.
