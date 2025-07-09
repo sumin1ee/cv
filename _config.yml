@@ -48,7 +48,7 @@ gtag: "G-VZR834C2H2"
 # about_title: About Me
 about_profile_image: images/profile2.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hello World, It's Sumin👋 I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and Neural View Synthesis
+  Hello World, It's Sumin👋 I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and LiDAR Novel View Synthesis by Gaussian Splatting.
   
   I am skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark> and <mark>V4L2</mark>
 content:
@@ -140,7 +140,7 @@ content:
     content:
       - layout: top-middle
         title: Hanyang University
-        caption: 2025.02 - Present
+        caption: 2025.03 - Present
         sub_title: 🚘 MS, Dept. of Automotive Engineering
 
       - layout: top-middle
