@@ -9,6 +9,7 @@ title: Computer Vision & Autonomous Driving Researcher
 tagline: Teaching machines to see — and drive.
 location: Seoul, South Korea
 affiliation: Intelligent Robotics & Computer Vision Lab · Hanyang University
+affiliation_url: https://ircvlab.github.io
 email: maroona@hanyang.ac.kr
 website: sumin1ee.github.io
 
@@ -96,7 +97,7 @@ content:
         subtitle: Vision-based End-to-End Driving · Waymo Open Dataset Challenge (CVPR 2025)
         badge: 3rd Place
         image: images/waymo_challenge.png
-        keywords: [E2E Autonomous Driving, Vision-based Planning, Transformer, Swin]
+        keywords: [E2E Autonomous Driving, Vision-based Planning]
         links:
           - icon: fas fa-trophy
             label: Challenge Page
@@ -114,7 +115,7 @@ content:
         subtitle: Capstone Design Project — full-stack autonomy
         badge: Top 3 / 30 · Solo Award
         image: videos/demo_pj.gif
-        keywords: [Valet Parking, Semantic Segmentation, RGB-D Calibration, BEV, Adaptive Pure-pursuit]
+        keywords: [Valet Parking, Semantic Segmentation, RGB-D Calibration, Adaptive Pure-pursuit]
         links:
           - icon: fas fa-link
             label: Project Notes
