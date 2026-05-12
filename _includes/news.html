@@ -1,0 +1,18 @@
+{%- if site.news -%}
+<section class="section section-news" id="news">
+  <header class="section-head">
+    <span class="section-num">01</span>
+    <h2 class="section-title">News</h2>
+    <span class="section-rule"></span>
+  </header>
+  <ul class="news-list">
+    {% for n in site.news %}
+      <li class="news-item">
+        <span class="news-date">{{ n.date }}</span>
+        <span class="news-tag news-tag--{{ n.tag }}">{{ n.tag }}</span>
+        <span class="news-text">{{ n.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{%- endif -%}

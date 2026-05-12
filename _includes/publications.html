@@ -1,0 +1,28 @@
+<div class="pub-grid">
+  {% for p in include.content %}
+    <article class="pub-card">
+      <div class="pub-card-head">
+        <span class="pub-venue">{{ p.venue }}</span>
+        <span class="pub-year">{{ p.year }}</span>
+      </div>
+      <h3 class="pub-title">{{ p.title | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+      <p class="pub-topic"><i class="fas fa-tag"></i> {{ p.topic }}</p>
+      <div class="pub-meta">
+        <span class="pub-role"><i class="fas fa-user-pen"></i> {{ p.role }}</span>
+        {% if p.status == 'under-review' %}
+          <span class="status-pill status-pill--review">
+            <span class="status-dot pulse"></span> under review
+          </span>
+        {% elsif p.status == 'accepted' %}
+          <span class="status-pill status-pill--accept">
+            <i class="fas fa-check"></i> accepted
+          </span>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
+
+<p class="pub-note">
+  <i class="fas fa-circle-info"></i> Titles withheld in compliance with double-blind review.
+</p>

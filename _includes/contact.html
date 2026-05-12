@@ -1,0 +1,32 @@
+<section class="section section-contact" id="contact">
+  <header class="section-head">
+    <span class="section-num">07</span>
+    <h2 class="section-title">Contact</h2>
+    <span class="section-rule"></span>
+  </header>
+
+  <div class="contact-card card">
+    <div class="contact-pitch">
+      <h3>Let's build the next frontier of autonomy together.</h3>
+      <p>
+        Open to research collaborations, internships and discussions on
+        <em>Gaussian Splatting</em>, <em>Online Mapping</em>, and <em>end-to-end driving</em>.
+      </p>
+    </div>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:{{ site.email }}">
+        <i class="fas fa-envelope"></i> {{ site.email }}
+      </a>
+      {%- if site.github_username -%}
+        <a class="btn btn-ghost" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> github.com/{{ site.github_username }}
+        </a>
+      {%- endif -%}
+      {%- if site.website -%}
+        <a class="btn btn-ghost" href="https://{{ site.website }}" target="_blank" rel="noopener">
+          <i class="fas fa-globe"></i> {{ site.website }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>

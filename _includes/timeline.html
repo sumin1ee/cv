@@ -1,0 +1,19 @@
+<ol class="timeline">
+  {% for item in include.content %}
+    <li class="timeline-item">
+      <div class="timeline-marker"><span class="dot"></span></div>
+      <div class="timeline-body">
+        <p class="timeline-period">{{ item.period }}</p>
+        <h3 class="timeline-role">{{ item.role }}</h3>
+        <p class="timeline-org">
+          {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.org }} <i class="fas fa-arrow-up-right-from-square"></i></a>{% else %}{{ item.org }}{% endif %}
+        </p>
+        {% if item.notes %}
+          <ul class="timeline-notes">
+            {% for n in item.notes %}<li>{{ n | markdownify | remove: '<p>' | remove: '</p>' }}</li>{% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>

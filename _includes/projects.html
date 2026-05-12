@@ -1,0 +1,31 @@
+<div class="project-stack">
+  {% for p in include.content %}
+    <article class="card project-card">
+      <div class="project-media">
+        <img src="{{ p.image | relative_url }}" alt="{{ p.title | escape }}" loading="lazy">
+        {% if p.badge %}<span class="project-badge"><i class="fas fa-award"></i> {{ p.badge }}</span>{% endif %}
+      </div>
+      <div class="project-body">
+        <div class="project-head">
+          <h3 class="project-title">{{ p.title }}</h3>
+          {% if p.subtitle %}<p class="project-sub">{{ p.subtitle }}</p>{% endif %}
+        </div>
+        <div class="project-desc">{{ p.description | strip | markdownify }}</div>
+        {% if p.keywords %}
+          <div class="chip-row chip-row--compact">
+            {% for k in p.keywords %}<span class="chip chip--mono">{{ k }}</span>{% endfor %}
+          </div>
+        {% endif %}
+        {% if p.links %}
+          <div class="project-links">
+            {% for l in p.links %}
+              <a href="{{ l.url }}" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+                <i class="{{ l.icon | default: 'fas fa-link' }}"></i> {{ l.label }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

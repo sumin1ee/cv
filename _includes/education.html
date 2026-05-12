@@ -1,0 +1,17 @@
+<div class="edu-line" role="list">
+  <div class="edu-line-track" aria-hidden="true"></div>
+  {% for e in include.content %}
+    <div class="edu-node" role="listitem" tabindex="0" aria-label="{{ e.school }} — {{ e.degree }}">
+      <div class="edu-dot"></div>
+      <span class="edu-date">{{ e.start }}</span>
+
+      <div class="edu-pop" role="tooltip">
+        <p class="edu-pop-school">{{ e.school }}</p>
+        <p class="edu-pop-degree">{{ e.degree }}</p>
+        <p class="edu-pop-range"><span class="kbd">period</span> {{ e.start }} — {{ e.end }}</p>
+        {% if e.note %}<p class="edu-pop-note">{{ e.note }}</p>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<p class="edu-hint"><i class="fas fa-circle-info"></i> hover or focus a node for details</p>

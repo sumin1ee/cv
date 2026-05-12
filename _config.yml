@@ -1,173 +1,173 @@
-# Site
+# ─── Site ─────────────────────────────────────────────────────────────────────
 repository: sproogen/resume-theme
 favicon: images/favicon.ico
-
-# Content configuration version
 version: 2
 
-# Personal info
+# ─── Identity ────────────────────────────────────────────────────────────────
 name: Sumin Lee
 title: Computer Vision & Autonomous Driving Researcher
+tagline: Teaching machines to see — and drive.
+location: Seoul, South Korea
+affiliation: Intelligent Robotics & Computer Vision Lab · Hanyang University
 email: maroona@hanyang.ac.kr
 website: sumin1ee.github.io
 
-# Dark Mode (true/false/never)
-darkmode: false
+# ─── Social ──────────────────────────────────────────────────────────────────
+github_username: sumin1ee
 
-# Social links
-# twitter_username: facespics
-github_username:  sumin1ee
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
-instagram_username: whereisumin
-# linkedin_username: jameswgrant
-# xing_username: jekyll
-# pinterest_username: jekyll
-# youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#   icon: fas fa-globe
-#   url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
+# ─── Analytics ───────────────────────────────────────────────────────────────
 gtag: "G-VZR834C2H2"
-# google_analytics: "UA-00000000-0"
 
-# About Section
-# about_title: About Me
+# ─── Hero / About ────────────────────────────────────────────────────────────
 about_profile_image: images/profile2.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hello World, It's Sumin👋 I’m a Master’s student at the Intelligent Robotics and Computer Vision Lab in Hanyang University. I received my bachelor’s degree in February 2025 and began my master’s program in March of the same year.  My research interests include End-to-End Planning, Autonomous Valet Parking System and LiDAR Novel View Synthesis by Gaussian Splatting.
-  
-  I am skilled in: <mark>PyTorch</mark>, <mark>ROS1/2</mark>, <mark>C++</mark>, <mark>C</mark>, <mark>CUDA</mark>, <mark>Docker</mark> and <mark>V4L2</mark>
+about_content: |
+  I'm a Master's researcher at the **Intelligent Robotics & Computer Vision Lab**, Hanyang University,
+  working on vision-centric autonomous driving.
+
+  My current research focuses on **Gaussian Splatting for autonomous driving** and **online mapping** —
+  asking how modern 3D scene representations can reshape the next generation of perception and planning.
+
+# ─── Highlights (manually surfaced) ──────────────────────────────────────────
+news:
+  - date: "2026·05"
+    tag: submission
+    text: "**NeurIPS 2026** — first-author paper submitted · *under review*"
+  - date: "2026·03"
+    tag: submission
+    text: "**ECCV 2026** — first-author paper submitted · *under review*"
+  - date: "2025·06"
+    tag: award
+    text: "**3rd place** at the *Waymo Open Dataset Challenge — Vision-based End-to-End Driving* (CVPR 2025)"
+  - date: "2025·03"
+    tag: milestone
+    text: "Began **MS** at Hanyang University, Dept. of Automotive Engineering"
+
+# ─── Interests (chip cloud) ──────────────────────────────────────────────────
+interests:
+  - Gaussian Splatting for Autonomous Driving
+  - Online Mapping
+  - 3D Scene Representation
+  - End-to-End Driving
+  - Multi-modal Perception
+
+# ─── Skills (icons via Devicon / Simple Icons CDN) ───────────────────────────
+skills:
+  - group: Languages
+    items:
+      - { name: Python,  icon: devicon-python-plain }
+      - { name: CUDA,    icon: simple-icon-nvidia }
+      - { name: "C++",   icon: devicon-cplusplus-plain }
+      - { name: C,       icon: devicon-c-plain }
+  - group: Frameworks
+    items:
+      - { name: PyTorch, icon: devicon-pytorch-original }
+      - { name: ROS,     icon: devicon-ros-original }
+      - { name: OpenCV,  icon: devicon-opencv-plain }
+      - { name: Open3D,  icon: simple-icon-open3d }
+  - group: Systems
+    items:
+      - { name: Linux,   icon: devicon-linux-plain }
+      - { name: Docker,  icon: devicon-docker-plain }
+      - { name: CMake,   icon: devicon-cmake-plain }
+      - { name: Git,     icon: devicon-git-plain }
+
+# ─── Content sections ────────────────────────────────────────────────────────
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Vision-based End-to-End Driving Challenge on Waymo Open Dataset (CVPR 2025)
-        # link: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
-        # link_text: Project Website
-        additional_links:
-          - title: Waymo Open Dataset Challenge
-            icon: fas fa-link
-            url: https://cvpr2025.wad.vision/
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          Awarded 3rd place
-        description: | # this will include new lines to allow paragraphs
-          <table>
-            <tr>
-              <td style="width:35%">
-                <img src="images/waymo_challenge.png" alt="e2e_wod" width="100%"/>
-              </td>
-              <td style="vertical-align:top; padding-left:20px;">
-                <p>
-                  Our team developed <b>Swin-Trajectory</b>, a minimalist transformer-based waypoint planner that uses a single front-facing camera and structured ego-vehicle history. By leveraging a lightweight Swin Transformer backbone and cross-attention between image features and dynamic waypoint queries, Swin-Trajectory efficiently predicts future waypoints.
-                </p>
-                <p>
-                  I extend my deepest gratitude to our team members for their passion, creativity, and tireless effort that made this achievement possible; and to my supervisor for unwavering support and mentorship.
-                </p>
-                <p>
-                  Special thanks to <i>RideFlux</i> for their invaluable technical support and collaboration.
-                </p>
-                <p>
-                  Keywords : <mark>E2E Autonomous Driving</mark>  <mark>Vision-based Trajectory Planning</mark>
-                </p>
-              </td>
-            </tr>
-          </table>
-      - layout: top-middle
-        title: Capstone Design Project
-        # link: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
-        # link_text: Project Website
-        additional_links:
-          - title:  Capstone Design Project
-            icon: fas fa-link
-            url: www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11?pvs=4
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          Selected as a top-3 project out of 30 teams — the only solo entry to win an award
-        description: | # this will include new lines to allow paragraphs
-          <table>
-            <tr>
-              <td style="width:35%">
-                <img src="videos/demo_pj.gif" alt="Demo" width="100%"/>
-              </td>
-              <td style="vertical-align:top; padding-left:20px;">
-                <p>
-                  Through this project, I built a full-stack pipeline which consists of <b>Perception</b>, <b>Planning</b> and <b>Control</b> for the <b>Autonomous Valet Parking System</b>.
-                </p>
-                <p>
-                  It served as the cornerstone of my academic path in autonomous driving, integrating key components of BEV-based perception, planning, and control into a unified system.
-                </p>
-                <p>
-                  Keywords : <mark>Autonomous Valet Parking</mark>  <mark>Semantic Segmentation</mark>  <mark>RGB-Depth Camera Calibration</mark>  <mark>BEV</mark>  <mark>Adaptive Pure-pursuit</mark>
-                </p>
-              </td>
-            </tr>
-          </table>
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Intelligent Robotics and Computer Vision Lab
-        link: ircvlab.github.io
-        # link_text: boringcompany.com
-        sub_title: Undergraduate Researcher
-        caption: September 2023 - February 2025
-        # quote: >
-        #   What started as a curiosity in path planning evolved into a deep passion for vision-centric AI and end-to-end learning systems
-        description: | # this will include new lines to allow paragraphs
-            I initially joined the lab with a strong interest in path planning, where I explored the fundamentals of autonomous trajectory generation. Over time, my exposure to the full pipeline of autonomous systems—including sensor integration, camera-LiDAR setups, and vision-based perception—sparked a growing curiosity in computer vision. This interdisciplinary perspective led me to dive deeper into multi-modal fusion and eventually shaped my passion for vision-centric planning. Recently, I’ve become especially drawn to end-to-end planning systems, where perception and decision-making are learned jointly, and I'm actively pursuing research in that direction.
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Hanyang University
-        caption: 2025.03 - Present
-        sub_title: 🚘 MS, Dept. of Automotive Engineering
-
-      - layout: top-middle
-        title: Hanyang University
-        caption: "2022.03 - 2025.02 (GPA : 4.03/4.5)"
-        sub_title: 🚘 BS, Dept. of Automotive Engineering
-
-      - layout: top-middle
-        title: Inha University
-        caption: 2019.03 - 2022.02
-        sub_title: 🛳️ Dept. of Naval Architecture & Ocean Engineering (Freshman) and Mechanical Engineering (Sophomore)
-
-      # - layout: top-middle
-      #   title: Inha University
-      #   caption: 2019.03 - 2020.02
-      #   sub_title: 🛳️ Freshman, Dept. of Naval Architecture & Ocean Engineering 
-
   - title: Publications
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      I'm currently diving deep into research to publish my first paper as soon as possible. Stay tuned!
+    layout: publications
+    content:
+      - venue: ECCV 2026
+        status: under-review
+        role: First Author
+        title: "*Title withheld — under double-blind review*"
+        topic: Gaussian Splatting · Autonomous Driving
+        year: 2026
+      - venue: NeurIPS 2026
+        status: under-review
+        role: First Author
+        title: "*Title withheld — under double-blind review*"
+        topic: Online Mapping · 3D Perception
+        year: 2026
 
-# Footer
+  - title: Selected Projects
+    layout: projects
+    content:
+      - title: Swin-Trajectory
+        subtitle: Vision-based End-to-End Driving · Waymo Open Dataset Challenge (CVPR 2025)
+        badge: 3rd Place
+        image: images/waymo_challenge.png
+        keywords: [E2E Autonomous Driving, Vision-based Planning, Transformer, Swin]
+        links:
+          - icon: fas fa-trophy
+            label: Challenge Page
+            url: https://cvpr2025.wad.vision/
+        description: |
+          A minimalist transformer-based waypoint planner that takes a single front-facing camera
+          and structured ego-vehicle history as input. A lightweight **Swin Transformer** backbone
+          cross-attends to dynamic waypoint queries to efficiently regress future trajectories —
+          competitive with much heavier multi-sensor baselines.
+
+          Deep thanks to my teammates and supervisor — and to *RideFlux* for technical support
+          and collaboration.
+
+      - title: Autonomous Valet Parking System
+        subtitle: Capstone Design Project — full-stack autonomy
+        badge: Top 3 / 30 · Solo Award
+        image: videos/demo_pj.gif
+        keywords: [Valet Parking, Semantic Segmentation, RGB-D Calibration, BEV, Adaptive Pure-pursuit]
+        links:
+          - icon: fas fa-link
+            label: Project Notes
+            url: https://www.notion.so/Capstone-Design-1dc8b1bb16e68037bc99d5a71575ab11
+        description:
+          End-to-end pipeline — **Perception → Planning → Control** — for a self-parking vehicle,
+          built solo. Integrated BEV-based perception, motion planning, and an adaptive pure-pursuit
+          controller into a single coherent system. The cornerstone of my academic path into autonomy.
+
+  - title: Experience
+    layout: timeline
+    content:
+      - period: 2025·03 — Present
+        role: MS Researcher
+        org: Intelligent Robotics & Computer Vision Lab, Hanyang University
+        url: https://ircvlab.github.io
+        notes:
+          - Researching Gaussian Splatting for autonomous driving and online mapping
+          - First-author submissions to ECCV 2026 & NeurIPS 2026
+
+      - period: 2023·09 — 2025·02
+        role: Undergraduate Researcher
+        org: Intelligent Robotics & Computer Vision Lab, Hanyang University
+        url: https://ircvlab.github.io
+        notes:
+          - Started with path planning, expanded into multi-sensor perception (camera–LiDAR)
+          - Pivoted toward vision-centric end-to-end planning
+
+  - title: Education
+    layout: education
+    content:
+      - school: Inha University
+        degree: BS · Naval Architecture & Ocean Engineering → Mechanical Engineering
+        start: "2019·03"
+        end: "2022·02"
+        note: Foundational engineering studies across two majors.
+
+      - school: Hanyang University
+        degree: BS · Dept. of Automotive Engineering
+        start: "2022·03"
+        end: "2025·02"
+        note: GPA 4.03 / 4.5. Joined IRCV Lab as an undergraduate researcher in Sep 2023.
+
+      - school: Hanyang University
+        degree: MS · Dept. of Automotive Engineering
+        start: "2025·03"
+        end: "Present"
+        note: Researching Gaussian Splatting & Online Mapping at IRCV Lab.
+
+# ─── Footer ──────────────────────────────────────────────────────────────────
 footer_show_references: false
-# references_title: References on request (Override references text)
 
-# Build settings
+# ─── Build ───────────────────────────────────────────────────────────────────
 remote_theme: sproogen/resume-theme
 
 sass:
@@ -175,4 +175,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag

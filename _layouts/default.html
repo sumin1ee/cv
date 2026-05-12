@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ site.name }} — {{ site.title }}</title>
+  {%- seo title=false -%}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | default: '/assets/favicon.ico' | relative_url }}">
+
+  {%- if jekyll.environment == 'production' and site.gtag -%}
+    {%- include gtag.html -%}
+  {%- endif -%}
+
+  <!-- Theme bootstrap (runs before paint to avoid flash) -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        var theme = stored || (prefersLight ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="bg-shell" aria-hidden="true">
+    <div class="grid-overlay"></div>
+    <div class="grain"></div>
+  </div>
+
+  <!-- Top nav -->
+  <nav class="topnav">
+    <a href="#top" class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-name">{{ site.name }}</span>
+      <span class="brand-slash">/</span>
+      <span class="brand-role">researcher</span>
+    </a>
+    <ul class="topnav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#news">news</a></li>
+      <li><a href="#publications">publications</a></li>
+      <li><a href="#selected-projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme">
+      <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+      <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+    </button>
+  </nav>
+
+  <main class="page-content" id="top">
+    <div class="shell">
+
+      {%- include hero.html -%}
+
+      {%- include news.html -%}
+
+      {% for section in site.content %}
+        {%- assign include_path = section.layout | append: ".html" -%}
+        <section class="section" id="{{ section.title | slugify }}">
+          <header class="section-head">
+            {%- assign num = forloop.index | plus: 1 -%}
+            {%- assign num_str = num | append: '' | prepend: '0' -%}
+            <span class="section-num">{{ num_str | slice: -2, 2 }}</span>
+            <h2 class="section-title">{{ section.title }}</h2>
+            <span class="section-rule"></span>
+          </header>
+          {%- include {{ include_path }} content=section.content -%}
+        </section>
+      {% endfor %}
+
+      {%- include skills.html -%}
+
+      {%- include contact.html -%}
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-left">
+        <span class="brand-dot"></span>
+        <span>{{ site.name }} · {{ 'now' | date: '%Y' }}</span>
+      </div>
+      <div class="footer-right">
+        <span class="kbd">crafted with care</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // tiny IntersectionObserver-based reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal, .section, .card, .pub-card, .news-item, .timeline-item').forEach(el => {
+      el.classList.add('reveal');
+      io.observe(el);
+    });
+
+    // Theme toggle
+    (function () {
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme') || 'dark';
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>

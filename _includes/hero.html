@@ -1,0 +1,49 @@
+<section class="hero" id="about">
+  <div class="hero-meta">
+    <span class="hero-meta-row"><span class="kbd">location</span> {{ site.location }}</span>
+    <span class="hero-meta-row"><span class="kbd">status</span><span class="status-dot pulse"></span> open to research collaborations</span>
+  </div>
+
+  {%- if site.about_profile_image -%}
+    <div class="hero-portrait">
+      <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}">
+    </div>
+  {%- endif -%}
+
+  <h1 class="hero-name">
+    <span class="hero-name-line">{{ site.name }}</span>
+  </h1>
+
+  <p class="hero-title">{{ site.title }}</p>
+  <p class="hero-tagline">{{ site.tagline }}</p>
+  <p class="hero-affiliation"><i class="fas fa-flask"></i> {{ site.affiliation }}</p>
+
+  <div class="hero-about">
+    {{ site.about_content | strip | markdownify }}
+  </div>
+
+  {%- if site.interests -%}
+    <div class="chip-row">
+      <span class="chip-label">research interests</span>
+      {% for it in site.interests %}
+        <span class="chip">{{ it }}</span>
+      {% endfor %}
+    </div>
+  {%- endif -%}
+
+  <div class="hero-cta">
+    <a href="mailto:{{ site.email }}" class="btn btn-primary">
+      <i class="fas fa-paper-plane"></i> get in touch
+    </a>
+    {%- if site.github_username -%}
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="btn btn-ghost">
+        <i class="fab fa-github"></i> github
+      </a>
+    {%- endif -%}
+    {%- if site.website -%}
+      <a href="https://{{ site.website }}" target="_blank" rel="noopener" class="btn btn-ghost">
+        <i class="fas fa-globe"></i> website
+      </a>
+    {%- endif -%}
+  </div>
+</section>
