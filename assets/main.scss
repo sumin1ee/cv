@@ -863,6 +863,19 @@ strong { color: var(--ink-0); font-weight: 600; }
 }
 
 /* ---- Live Splat demo --------------------------------------------------- */
+.section-splat .section-head { gap: 12px; }
+.splat-tag {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 3px 9px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: var(--accent-soft);
+}
+
 .splat-card {
   background: var(--surface);
   border: 1px solid var(--border);
