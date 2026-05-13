@@ -34,6 +34,16 @@
       }
     })();
   </script>
+
+  <!-- Three.js + GaussianSplats3D ES modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "@mkkellogg/gaussian-splats-3d": "https://cdn.jsdelivr.net/npm/@mkkellogg/gaussian-splats-3d@0.4.7/build/gaussian-splats-3d.module.js"
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -69,13 +79,15 @@
 
       {%- include hero.html -%}
 
+      {%- include splat-demo.html -%}
+
       {%- include news.html -%}
 
       {% for section in site.content %}
         {%- assign include_path = section.layout | append: ".html" -%}
         <section class="section" id="{{ section.title | slugify }}">
           <header class="section-head">
-            {%- assign num = forloop.index | plus: 1 -%}
+            {%- assign num = forloop.index | plus: 2 -%}
             {%- assign num_str = num | append: '' | prepend: '0' -%}
             <span class="section-num">{{ num_str | slice: -2, 2 }}</span>
             <h2 class="section-title">{{ section.title }}</h2>
@@ -125,6 +137,50 @@
         try { localStorage.setItem('theme', next); } catch (e) {}
       });
     })();
+  </script>
+
+  <!-- Gaussian Splatting viewer (only boots when its mount is visible) -->
+  <script type="module">
+    import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d';
+    import * as THREE from 'three';
+
+    const mount = document.getElementById('splat-mount');
+    if (mount) {
+      // Defer load until the card scrolls into view — saves bandwidth for casual visitors.
+      const start = async () => {
+        const SCENE = '{{ "/assets/splats/shinchan.ksplat" | relative_url }}';
+        const viewer = new GaussianSplats3D.Viewer({
+          'rootElement': mount,
+          'cameraUp': [0, 0, 1],
+          'initialCameraPosition': [2.2, -2.2, 1.4],
+          'initialCameraLookAt': [0, 0, 0],
+          'sphericalHarmonicsDegree': 0,
+          'sharedMemoryForWorkers': false,
+          'selfDrivenMode': true,
+          'useBuiltInControls': true,
+          'antialiased': true,
+        });
+        try {
+          await viewer.addSplatScene(SCENE, { 'progressiveLoad': false });
+          const loader = document.getElementById('splat-loader');
+          if (loader) loader.classList.add('hidden');
+          viewer.start();
+        } catch (err) {
+          console.error('splat load failed:', err);
+          const loader = document.getElementById('splat-loader');
+          if (loader) loader.innerHTML = '<span class="splat-loader-text" style="color:#FF6B6B;">load failed — see console</span>';
+        }
+      };
+
+      // IntersectionObserver — boot once card is on-screen.
+      const card = document.getElementById('splat-card');
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { obs.disconnect(); start(); }
+        });
+      }, { threshold: 0.15 });
+      io.observe(card);
+    }
   </script>
 </body>
 </html>
