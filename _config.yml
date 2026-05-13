@@ -25,7 +25,7 @@ about_content: |
   I'm a Master's researcher at the **Intelligent Robotics & Computer Vision Lab**, Hanyang University,
   working on vision-centric autonomous driving.
 
-  My current research focuses on **Gaussian Splatting for autonomous driving** and **online mapping** —
+  My current research focuses on **Gaussian Splatting for autonomous driving** and **Online Mapping** —
   asking how modern 3D scene representations can reshape the next generation of perception and planning.
 
 # ─── Highlights (manually surfaced) ──────────────────────────────────────────
@@ -133,7 +133,7 @@ content:
         org: Intelligent Robotics & Computer Vision Lab, Hanyang University
         url: https://ircvlab.github.io
         notes:
-          - Researching Gaussian Splatting for autonomous driving and online mapping
+          - Researching Gaussian Splatting for autonomous driving and Online Mapping
           - First-author submissions to ECCV 2026 & NeurIPS 2026
 
       - period: 2023·09 — 2025·02
