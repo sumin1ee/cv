@@ -33,9 +33,6 @@ news:
   - date: "2026·05"
     tag: submission
     text: "**NeurIPS 2026** — first-author paper submitted · *under review*"
-  - date: "2026·03"
-    tag: submission
-    text: "**ECCV 2026** — first-author paper submitted · *under review*"
   - date: "2025·06"
     tag: award
     text: "**3rd place** at the *Waymo Open Dataset Challenge — Vision-based End-to-End Driving* (CVPR 2025)"
@@ -77,12 +74,6 @@ content:
   - title: Publications
     layout: publications
     content:
-      - venue: ECCV 2026
-        status: under-review
-        role: First Author
-        title: "*Title withheld — under double-blind review*"
-        topic: Gaussian Splatting · Autonomous Driving
-        year: 2026
       - venue: NeurIPS 2026
         status: under-review
         role: First Author
@@ -134,7 +125,7 @@ content:
         url: https://ircvlab.github.io
         notes:
           - Researching Gaussian Splatting for autonomous driving and Online Mapping
-          - First-author submissions to ECCV 2026 & NeurIPS 2026
+          - First-author submission to NeurIPS 2026
 
       - period: 2023·09 — 2025·02
         role: Undergraduate Researcher
