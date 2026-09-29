@@ -958,3 +958,95 @@ strong { color: var(--ink-0); font-weight: 600; }
 @media (max-width: 880px) {
   .splat-canvas-wrap { aspect-ratio: 4 / 3; min-height: 280px; }
 }
+
+/* ─── fx: splat-name ──────────────────────────────────────────────────────── */
+.hero-name.is-splatted { position: relative; }
+.hero-name.is-splatted .hero-name-line { color: transparent; }
+.splat-name-canvas {
+  position: absolute; left: 0; top: 0;
+  pointer-events: none;
+}
+.splat-name-hud {
+  margin: -6px 0 14px;
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  letter-spacing: 0.02em;
+}
+.splat-name-hud .kbd { margin-right: 6px; }
+
+/* ─── fx: detector box ────────────────────────────────────────────────────── */
+.det-box {
+  position: fixed; left: 0; top: 0; z-index: 60;
+  pointer-events: none;
+  border: 1px dashed color-mix(in srgb, var(--accent) 55%, transparent);
+  border-radius: 4px;
+  opacity: 0;
+  transition: transform .22s cubic-bezier(.2,.8,.2,1), width .22s cubic-bezier(.2,.8,.2,1),
+              height .22s cubic-bezier(.2,.8,.2,1), opacity .15s;
+}
+.det-box.on { opacity: 1; }
+.det-c { position: absolute; width: 12px; height: 12px; border: 2px solid var(--accent); }
+.det-c.tl { left: -2px;  top: -2px;    border-right: 0; border-bottom: 0; }
+.det-c.tr { right: -2px; top: -2px;    border-left: 0;  border-bottom: 0; }
+.det-c.bl { left: -2px;  bottom: -2px; border-right: 0; border-top: 0; }
+.det-c.br { right: -2px; bottom: -2px; border-left: 0;  border-top: 0; }
+.det-label {
+  position: absolute; left: -2px; bottom: 100%; margin-bottom: 3px;
+  padding: 1px 6px;
+  font: 600 10.5px/1.5 var(--f-mono);
+  color: var(--accent-ink); background: var(--accent);
+  border-radius: 3px; white-space: nowrap;
+}
+.hero-portrait { z-index: 2; }
+
+/* ─── fx: diffusion titles ────────────────────────────────────────────────── */
+.diff-t {
+  font-family: var(--f-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  align-self: center;
+  transition: opacity .8s ease .6s;
+}
+.diff-t.done { opacity: 0; }
+
+/* ─── fx: flow-matching portrait ──────────────────────────────────────────── */
+.flow-canvas {
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+.hero-portrait.is-flowing .flow-canvas { opacity: 1; }
+.hero-portrait.is-flowing img { opacity: 0; }
+.flow-tag {
+  position: absolute; left: 50%; top: 100%; transform: translateX(-50%);
+  margin-top: 8px;
+  font: 500 10.5px var(--f-mono);
+  color: var(--accent);
+  white-space: nowrap;
+  opacity: 0; transition: opacity .3s;
+}
+.hero-portrait.is-flowing .flow-tag { opacity: 1; }
+
+/* ─── fx: online HD map HUD ───────────────────────────────────────────────── */
+.bev-hud {
+  position: fixed; right: 20px; bottom: 20px; z-index: 40;
+  width: 190px;
+  padding: 7px 7px 6px;
+  background: color-mix(in srgb, var(--bg-1) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-2);
+  font: 10px/1.4 var(--f-mono);
+  color: var(--ink-2);
+}
+.bev-head, .bev-foot { display: flex; justify-content: space-between; align-items: center; padding: 0 2px; }
+.bev-head { margin-bottom: 5px; color: var(--ink-1); }
+.bev-foot { margin-top: 4px; }
+.bev-sec { color: var(--accent); }
+.bev-canvas { display: block; border-radius: 6px; background: var(--bg-0); }
+.bev-min { background: none; border: 0; color: var(--ink-2); cursor: pointer; font: inherit; padding: 0 2px; }
+.bev-hud.is-min .bev-canvas, .bev-hud.is-min .bev-foot { display: none; }
+.bev-hud.is-min .bev-head { margin-bottom: 0; }

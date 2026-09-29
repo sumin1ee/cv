@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ site.name }} — {{ site.title }}</title>
+  <title>{{ site.name }} · {{ site.title }}</title>
   {%- seo title=false -%}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,6 +139,8 @@
     })();
   </script>
 
+  <script src="{{ '/assets/js/fx.js' | relative_url }}" defer></script>
+
   <!-- Gaussian Splatting viewer (only boots when its mount is visible) -->
   <script type="module">
     import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d';
@@ -168,7 +170,7 @@
         } catch (err) {
           console.error('splat load failed:', err);
           const loader = document.getElementById('splat-loader');
-          if (loader) loader.innerHTML = '<span class="splat-loader-text" style="color:#FF6B6B;">load failed — see console</span>';
+          if (loader) loader.innerHTML = '<span class="splat-loader-text" style="color:#FF6B6B;">load failed, see console</span>';
         }
       };
 
