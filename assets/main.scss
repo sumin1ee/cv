@@ -482,6 +482,7 @@ strong { color: var(--ink-0); font-weight: 600; }
 }
 .news-tag--submission { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
 .news-tag--award { color: var(--accent-warn); border-color: var(--accent-warn); background: color-mix(in srgb, var(--accent-warn) 12%, transparent); }
+.news-tag--accepted { color: var(--accent-ink); border-color: var(--accent); background: var(--accent); }
 .news-text { color: var(--ink-1); font-size: 0.94rem; }
 .news-text strong { color: var(--ink-0); }
 
@@ -520,6 +521,8 @@ strong { color: var(--ink-0); font-weight: 600; }
 .pub-year { font-family: var(--f-mono); color: var(--ink-3); font-size: 0.78rem; }
 .pub-title { font-size: 1.02rem; color: var(--ink-0); font-family: var(--f-display); font-weight: 500; margin-bottom: 8px; line-height: 1.35; }
 .pub-title em { color: var(--ink-1); }
+.pub-authors { color: var(--ink-1); font-size: 0.88rem; margin: -2px 0 8px; }
+.pub-authors strong { color: var(--ink-0); }
 .pub-topic { color: var(--ink-2); font-size: 0.85rem; margin-bottom: 14px; }
 .pub-topic i { color: var(--accent); margin-right: 6px; }
 
@@ -540,6 +543,7 @@ strong { color: var(--ink-0); font-weight: 600; }
   background: var(--surface);
 }
 .status-pill--review { color: var(--accent-warn); border-color: color-mix(in srgb, var(--accent-warn) 50%, transparent); }
+.status-pill--accept { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 50%, transparent); background: var(--accent-soft); }
 
 .status-dot {
   width: 7px; height: 7px; border-radius: 50%;
